@@ -1,2 +1,1 @@
-node-jira-api
-=============
+# JIRA API v2 library for node.js

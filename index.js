@@ -1,1 +1,1 @@
-module.exports = require('./lib/jira-api');
+module.exports = require('./lib/');
