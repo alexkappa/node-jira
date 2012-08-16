@@ -16,7 +16,7 @@ Clone this repo into your project
 
 In your application, require the library using
 
-	jira = require('./jira-api');
+	var jira = require('./jira-api');
 
 # Usage
 
@@ -67,4 +67,4 @@ You can also specify the data to send (in case of POST, PUT etc.)
 		console.log(JSON.stringify(response, null, 4));
 	});
 
-For a list of available request representations consult the [official documentation](http://docs.atlassian.com/jira/REST/latest/)
+For a list of available request representations consult the [official API documentation](http://docs.atlassian.com/jira/REST/latest/).
