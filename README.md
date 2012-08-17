@@ -10,13 +10,13 @@ This library is **not** production ready and by no means complete. If you wish t
 
 # Installation
 
-Clone this repo into your project
+Install with NPM
 
-	git clone git://github.com/alexkappa/node-jira-api.git
+	npm install jira-api
 
 In your application, require the library using
 
-	var jira = require('./jira-api');
+	var jira = require('jira-api');
 
 # Usage
 
