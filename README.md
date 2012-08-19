@@ -1,12 +1,12 @@
 # JIRA API wrapper for Node.JS
 
 A library for working with JIRA's RESTful API. No dependencies.
+So far the following resources are supported:
 
-This library is **not** production ready and by no means complete. If you wish to contribute please follow the conventions used so far, make a new directory inside ``lib/`` named after the resource you wish to access. Thats it. Enjoy!
+	/rest/api/2/issue [GET, POST, PUT, DELETE]
+	/rest/api/2/issue/createmeta [GET]
 
-#### Supported resources
-
-- issue
+If you wish to contribute please follow the conventions used so far, make a new directory inside ``lib/`` named after the resource you wish to access. Thats it. Enjoy!
 
 # Installation
 
