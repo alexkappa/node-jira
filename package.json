@@ -1,11 +1,11 @@
 {
     "name": "jira-api",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "A library for working with JIRA's RESTful API",
     "keywords": [
         "jira",
         "JIRA"
     ],
     "license": "Apache License, Version 2.0",
-    "main": "./lib/index.js",
+    "main": "./lib/index.js"
 }

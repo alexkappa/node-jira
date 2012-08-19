@@ -1,6 +1,6 @@
 # JIRA API wrapper for Node.JS
 
-A library for working with JIRA's RESTful API.
+A library for working with JIRA's RESTful API. No dependencies.
 
 This library is **not** production ready and by no means complete. If you wish to contribute please follow the conventions used so far, make a new directory inside ``lib/`` named after the resource you wish to access. Thats it. Enjoy!
 
@@ -26,7 +26,7 @@ Now you're ready to make calls to the API
 		config: {
 			"username": "someuser",
 			"passowrd": "secretpass",
-			"host": "http://example.com/jira/"
+			"host": "/example.com/jira/"
 		},
 		issueIdOrKey: "123"
 	};
@@ -41,7 +41,7 @@ You can also specify the data to send (in case of POST, PUT etc.)
 		config: {
 			"username": "someuser",
 			"passowrd": "secretpass",
-			"host": "http://example.com/jira/"
+			"host": "example.com/jira/"
 		},
 		data: {
 			fields: {
