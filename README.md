@@ -85,7 +85,7 @@ You can add an attachment to an existing issue
                     key: "PROJ999-100"
                 }       
             },          
-            file: './images/awesome-kirk2.jpg'
+            file: "./images/awesome-kirk2.jpg"
         }               
 	};
 
