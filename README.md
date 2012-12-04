@@ -89,8 +89,11 @@ You can add an attachment to an existing issue
         }               
 	};
 
-	jira.issue.post(options, function(response) {
-		console.log(JSON.stringify(response, null, 4));
+	jira.issue.post(options, function(err, response) {
+		if (err)
+			console.error(err);
+		else
+			console.log(JSON.stringify(response, null, 4));
 	});
 
 For a list of available request representations consult the [official API documentation](http://docs.atlassian.com/jira/REST/latest/).
