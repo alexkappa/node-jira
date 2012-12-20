@@ -10,9 +10,9 @@ If you wish to contribute please follow the conventions used so far, make a new 
 
 # Installation
 
-Install with NPM
+~~Install with NPM~~
 
-	npm install jira-api
+	~~npm install jira-api~~
 
 In your application, require the library using
 
