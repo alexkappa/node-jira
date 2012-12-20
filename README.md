@@ -12,6 +12,8 @@ If you wish to contribute please follow the conventions used so far, make a new 
 
 ~~Install with NPM~~
 
+Clone the repo so that you get the post functionality that can handle attachment sending to JIRA.
+
 In your application, require the library using
 
 	var jira = require('jira-api');
