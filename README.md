@@ -10,9 +10,9 @@ If you wish to contribute please follow the conventions used so far, make a new 
 
 # Installation
 
-Install with NPM
+~~Install with NPM~~
 
-	npm install jira-api
+Clone the repo so that you get the post functionality that can handle attachment sending to JIRA.
 
 In your application, require the library using
 
@@ -20,6 +20,7 @@ In your application, require the library using
 
 # Usage
 
+## Get issue information
 Now you're ready to make calls to the API
 
 	var options = {
@@ -35,6 +36,7 @@ Now you're ready to make calls to the API
 		console.log(JSON.stringify(response, null, 4));
 	});
 
+## Create an issue
 You can also specify the data to send (in case of POST, PUT etc.)
 
 	var options = {
@@ -65,6 +67,33 @@ You can also specify the data to send (in case of POST, PUT etc.)
 
 	jira.issue.post(options, function(response) {
 		console.log(JSON.stringify(response, null, 4));
+	});
+
+
+## Add an attachment
+You can add an attachment to an existing issue 
+
+	var options = {
+		config: {
+			"username": "someuser",
+			"passowrd": "secretpass",
+			"host": "example.com/jira/"
+		},
+        data: {         
+            fields: {   
+                issue: {
+                    key: "PROJ999-100"
+                }       
+            },          
+            file: "./images/awesome-kirk2.jpg"
+        }               
+	};
+
+	jira.issue.post(options, function(err, response) {
+		if (err)
+			console.error(err);
+		else
+			console.log(JSON.stringify(response, null, 4));
 	});
 
 For a list of available request representations consult the [official API documentation](http://docs.atlassian.com/jira/REST/latest/).

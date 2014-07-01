@@ -6,6 +6,11 @@
         "jira",
         "JIRA"
     ],
+    "dependencies": {
+        "mime": ">=1.2.7",
+        "async": ">=0.1.22",
+        "path": ">=0.4.9"
+    },
     "license": "Apache License, Version 2.0",
     "main": "./lib/index.js"
 }
