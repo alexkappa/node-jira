@@ -10,9 +10,7 @@ If you wish to contribute please follow the conventions used so far, make a new 
 
 # Installation
 
-~~Install with NPM~~
-
-Clone the repo so that you get the post functionality that can handle attachment sending to JIRA.
+Install with NPM
 
 In your application, require the library using
 
